@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: BMCooley/mergeable-action@v1
+    - uses: BMCooley/mergeable-action@v1.0.1
       with:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         APPROVALS: "1"
