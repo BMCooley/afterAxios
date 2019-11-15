@@ -1,0 +1,15 @@
+name: label-mergeable-pr
+
+on:
+  pull_request_review:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: BMCooley/mergeable-action@v1
+      with:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        APPROVALS: "1"
